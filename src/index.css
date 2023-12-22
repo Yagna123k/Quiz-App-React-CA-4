@@ -1,13 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;500;700;900&family=Work+Sans&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #FFF;
+  box-sizing: border-box;
+  text-align: center;
+}
+button{
+  cursor: pointer;
+}
+.home-main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/Quiz Cover.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title{
+  color: #FFF;
+  text-align: center;
+  text-shadow: 7px 7px 0px #000;
+  font-family: Roboto;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 116%; /* 111.36px */
+  -webkit-text-stroke: 3px #000;
+  margin-top: -5%;
+}
+
+.start{
+  position: absolute;
+  top:60%;
+  right: 20%;
+  width: 175px;
+  height: 60px;
+  gap: 2px;
+  border: none;
+  border-radius: 10px;
+  background: #F03986;
+  border: 4px solid #000;
+  box-shadow: #000 4px 4px;
+  color: #3D0F22;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+}
+button:hover{
+  transform: scale(1.05);
+}
+button:active{
+  transform: scale(1.1);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 10vh;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+.logo{
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 800;
+  -webkit-text-stroke: 3px #000;
+}
+#mode{
+  background-color: #3C9BF2;
+  border: 2px solid #163959;
+  width: 120px;
+  height: 50px;
+  box-shadow: #163959 4px 4px;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.home-mode{
+  position: absolute;
+  top: 7%;
+  right: 10%;
+}
+
+.questionBox{
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid #000;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #FFF9E4;
+}
+.questionBox h4{
+  text-align: left;
+  margin-left: 5%;
+}
+
+.questionBox h2{
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 116%;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.options button{
+  width: 40%;
+  min-height: 60px;
+  margin-top: 5%;
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 116%;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.options .option0{
+  border: 4px solid #571530;
+  background: #F03986;
+  box-shadow: 2px 2px 0px 0px #571530;
+  color: #571530;
+}
+.options .option1{
+  border: 4px solid #15451F;
+  background: #43DD65;
+  box-shadow: 2px 2px 0px 0px #15451F;
+  color: #15451F;
+}
+.options .option2{
+  border: 4px solid #594A16;
+  background: #F2CA3C;
+  box-shadow: 2px 2px 0px 0px #594A16;
+  color: #594A16;
+}
+.options .option3{
+  border: 4px solid #163959;
+  background:#3C9BF2;
+  box-shadow: 2px 2px 0px 0px #163959;
+  color: #163959;
+}
+
+.highlights{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.highlights button{
+  width: 30%;
+  margin: 0 5%;
+  min-height: 40px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 116%;
+  border-radius: 10px;
+  padding: 5px 0;
+  border: 4px solid #571530;
+  background: #F03986;
+  box-shadow: 2px 2px 0px 0px #571530;
+  color: #571530;
+}
+
+.highlights .RHighlight{
+  background-color: #FFF9E4;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .title{
+    font-size: 40px;
+    text-shadow: none;
+  }
+  .start{
+    top:80%;
+    right: 25%;
+  }
+
+  #mode{
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+  }
+
+  .logo {
+    font-size: 24px; 
+  }
+
+  .questionBox {
+    height: 80vh;
+    width: 90%;
+    font-size: 16px; 
+  }
+
+
+  .options button {
+    width: 90%; 
+    font-size: 16px;
+    margin: auto;
+    margin-top: 5px; 
+  }
+  .questionBox h2{
+    font-size: 24px;
+  }
+
+  .highlights {
+    flex-direction: column; 
+  }
+
+  .highlights button {
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0; 
+  }
+
 }
